@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bd.edu.seu.background.AdmindashboardController">
+   <children>
+      <ImageView fitHeight="500.0" fitWidth="700.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@6316706405247206694.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="198.0" layoutY="117.0" mnemonicParsing="false" onAction="#addDeleteUpdate" style="-fx-background-color: yellow;" text="ADD/DELETE OR UPDATE MOVIE">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="420.0" layoutY="117.0" mnemonicParsing="false" onAction="#allpurchaselist" style="-fx-background-color: yellow;" text="PURCHASE LIST">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="549.0" layoutY="117.0" mnemonicParsing="false" onAction="#showallpoints" style="-fx-background-color: yellow;" text="SUPER POINTS">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="38.0" layoutY="449.0" mnemonicParsing="false" onAction="#returntohomescene" style="-fx-background-color: yellow;" text="RETURN ">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+      <TableView fx:id="listofmoviesview" layoutX="199.0" layoutY="146.0" prefHeight="313.0" prefWidth="448.0" style="-fx-background-color: yellow;">
+        <columns>
+          <TableColumn fx:id="listmoviename" prefWidth="83.0" text="Movie name" />
+          <TableColumn fx:id="listmoviedate" prefWidth="73.0" text="Date" />
+            <TableColumn fx:id="listmovietime" prefWidth="73.0" text="Time" />
+            <TableColumn fx:id="listmoviequantity" prefWidth="89.0" text="Quantity " />
+            <TableColumn fx:id="listmovieprice" prefWidth="65.0" text="Price" />
+            <TableColumn fx:id="listmovieratings" prefWidth="64.0" text="Genre" />
+        </columns>
+      </TableView>
+      <TableView fx:id="mymovie" layoutX="209.0" layoutY="156.0" prefHeight="313.0" prefWidth="467.0" style="-fx-background-color: yellow;">
+         <columns>
+            <TableColumn fx:id="mymovienames" prefWidth="76.0" text="Name" />
+            <TableColumn fx:id="mymoviename" prefWidth="101.0" text="Movie name" />
+            <TableColumn fx:id="mymoviedate" prefWidth="69.0" text="Date" />
+            <TableColumn fx:id="mymovietime" prefWidth="53.0" text="Time" />
+            <TableColumn fx:id="mymoviequantity" prefWidth="54.0" text="Quantity" />
+            <TableColumn fx:id="mymovieprice" prefWidth="59.0" text="Price" />
+            <TableColumn fx:id="mymovieratings" prefWidth="59.0" text="Genre" />
+         </columns>
+      </TableView>
+      <TableView fx:id="ratings" layoutX="219.0" layoutY="166.0" prefHeight="299.0" prefWidth="254.0" style="-fx-background-color: yellow;">
+         <columns>
+            <TableColumn fx:id="ratingsname" prefWidth="132.0" text="Name" />
+            <TableColumn fx:id="ratingspoints" prefWidth="121.0" text="Points" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

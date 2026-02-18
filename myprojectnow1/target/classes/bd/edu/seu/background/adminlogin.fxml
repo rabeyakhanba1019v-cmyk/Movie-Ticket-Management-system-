@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bd.edu.seu.background.AdminloginController">
+   <children>
+      <ImageView fitHeight="500.0" fitWidth="700.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@1734189095624.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="adminname" layoutX="276.0" layoutY="257.0" />
+      <Button layoutX="314.0" layoutY="368.0" mnemonicParsing="false" onAction="#log" style="-fx-background-color: yellow;" text="LOGIN">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Button>
+      <Label fx:id="label1" layoutX="321.0" layoutY="289.0" prefHeight="17.0" prefWidth="60.0" text="Invalid" textFill="#f8f8f8">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="label2" layoutX="321.0" layoutY="340.0" prefHeight="17.0" prefWidth="60.0" text="Invalid" textFill="#f8f8f8">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="adminid" layoutX="277.0" layoutY="315.0" />
+      <Button layoutX="20.0" layoutY="452.0" mnemonicParsing="false" onAction="#chantttttt" style="-fx-background-color: yellow;" text="Return">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

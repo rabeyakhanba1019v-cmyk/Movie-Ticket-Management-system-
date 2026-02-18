@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bd.edu.seu.background.DashboardController">
+   <children>
+      <ImageView fitHeight="500.0" fitWidth="700.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@6316706405247206695(1).jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="namelable" layoutX="39.0" layoutY="105.0" prefHeight="20.0" prefWidth="104.0" textFill="#f5f524">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="538.0" layoutY="116.0" mnemonicParsing="false" onAction="#recomendation" style="-fx-background-color: yellow;" text="RECOMMENDATION">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="423.0" layoutY="116.0" mnemonicParsing="false" onAction="#showpurchase" style="-fx-background-color: yellow;" text="PURCHASE LIST">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="159.0" layoutY="116.0" mnemonicParsing="false" onAction="#showpoints" prefHeight="25.0" prefWidth="131.0" style="-fx-background-color: yellow;" text="SUPER POINTS">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="305.0" layoutY="116.0" mnemonicParsing="false" onAction="#showlist" style="-fx-background-color: yellow;" text="LIST OF MOVIES">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="21.0" layoutY="462.0" mnemonicParsing="false" onAction="#returntohomescene" style="-fx-background-color: yellow;" text="RETURN">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+      <TableView fx:id="listofmoviesview" layoutX="159.0" layoutY="167.0" onMouseClicked="#getiteams" prefHeight="319.0" prefWidth="444.0" style="-fx-background-color: yellow;">
+        <columns>
+          <TableColumn fx:id="listmoviename" prefWidth="104.0" text="Movie Name" />
+          <TableColumn fx:id="listmoviedate" text="Date" />
+            <TableColumn fx:id="listmovietime" prefWidth="50.0" text="Time" />
+            <TableColumn fx:id="listmoviequantity" prefWidth="74.0" text="Quantity" />
+            <TableColumn fx:id="listmovieprice" prefWidth="69.0" text="Price" />
+            <TableColumn fx:id="listmovieratings" prefWidth="66.0" text="Genre" />
+        </columns>
+      </TableView>
+      <TableView fx:id="mymovie" layoutX="184.0" layoutY="177.0" prefHeight="299.0" prefWidth="482.0" style="-fx-background-color: yellow;">
+         <columns>
+            <TableColumn fx:id="mymovienames" prefWidth="82.0" text="Name" />
+            <TableColumn fx:id="mymoviename" prefWidth="107.0" text="Movie name" />
+            <TableColumn fx:id="mymoviedate" prefWidth="67.0" text="Date" />
+            <TableColumn fx:id="mymovietime" prefWidth="52.0" text="Time" />
+            <TableColumn fx:id="mymoviequantity" prefWidth="54.0" text="Quantity" />
+            <TableColumn fx:id="mymovieprice" prefWidth="57.0" text="Balance" />
+            <TableColumn fx:id="mymovieratings" prefWidth="62.0" text="Genre" />
+         </columns>
+      </TableView>
+      <Label fx:id="superpointslable" layoutX="68.0" layoutY="176.0" prefHeight="36.0" prefWidth="64.0" style="-fx-background-color: yellow;">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font></Label>
+      <Label fx:id="movienamelable" layoutX="7.0" layoutY="177.0" style="-fx-background-color: yellow;" text="Name:">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="moviedatelable" layoutX="8.0" layoutY="209.0" style="-fx-background-color: yellow;" text="Date:">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="movietimelable" layoutX="10.0" layoutY="242.0" prefHeight="17.0" prefWidth="32.0" style="-fx-background-color: yellow;" text="Time:">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="moviequantitylable" layoutX="7.0" layoutY="269.0" prefHeight="17.0" prefWidth="70.0" style="-fx-background-color: yellow;" text="Quantity">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="moviepricelable" layoutX="8.0" layoutY="302.0" style="-fx-background-color: yellow;" text="Price">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="nam1" layoutX="51.0" layoutY="177.0" style="-fx-background-color: yellow;">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <Label fx:id="date1" layoutX="51.0" layoutY="209.0" style="-fx-background-color: yellow;">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <Label fx:id="time1" layoutX="51.0" layoutY="242.0" style="-fx-background-color: yellow;">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <Label fx:id="quantity1" layoutX="90.0" layoutY="269.0" style="-fx-background-color: yellow;">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <Label fx:id="price1" layoutX="48.0" layoutY="302.0" prefHeight="17.0" prefWidth="82.0" style="-fx-background-color: yellow;">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <Button fx:id="purchase" layoutX="33.0" layoutY="358.0" mnemonicParsing="false" onAction="#purchasebutton" style="-fx-background-color: yellow;" text="Purchase">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+      <TextField fx:id="serchfield" layoutX="3.0" layoutY="141.0" onKeyReleased="#ser" prefHeight="17.0" prefWidth="149.0" promptText="Search by name " style="-fx-background-color: yellow;">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bd.edu.seu.background.UpdateController">
+   <children>
+      <ImageView fitHeight="500.0" fitWidth="700.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@1737033593427.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="nametextfield" layoutX="336.0" layoutY="140.0" prefHeight="25.0" prefWidth="262.0" />
+      <TextField fx:id="timetextfield" layoutX="337.0" layoutY="192.0" prefHeight="25.0" prefWidth="262.0" />
+      <DatePicker fx:id="datepicker" layoutX="337.0" layoutY="238.0" prefHeight="25.0" prefWidth="262.0" />
+      <Spinner fx:id="quantityspinner" layoutX="340.0" layoutY="291.0" prefHeight="25.0" prefWidth="262.0" />
+      <Spinner fx:id="pricespinner" layoutX="340.0" layoutY="342.0" prefHeight="25.0" prefWidth="262.0" />
+      <Button layoutX="323.0" layoutY="465.0" mnemonicParsing="false" onAction="#add" prefHeight="25.0" prefWidth="72.0" style="-fx-background-color: YELLOW;" text="ADD">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="70.0" layoutY="465.0" mnemonicParsing="false" onAction="#update" style="-fx-background-color: YELLOW;" text="UPDATE">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="561.0" layoutY="465.0" mnemonicParsing="false" onAction="#delete" style="-fx-background-color: YELLOW;" text="DELETE">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+      <Label fx:id="lable1" layoutX="372.0" layoutY="165.0" prefHeight="17.0" prefWidth="112.0" style="-fx-background-color: yellow;" text="CANNOT BE EMPTY">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="lable2" layoutX="372.0" layoutY="217.0" prefHeight="0.0" prefWidth="112.0" style="-fx-background-color: yellow;" text="CANNOT BE EMPTY">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="lable3" layoutX="353.0" layoutY="274.0" prefHeight="17.0" prefWidth="150.0" style="-fx-background-color: yellow;" text="CANNOT BE PAST DATES">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="lable4" layoutX="359.0" layoutY="325.0" prefHeight="17.0" prefWidth="166.0" style="-fx-background-color: yellow;" text="CANNOT BE LESS THEN 10 ">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="lable5" layoutX="359.0" layoutY="367.0" prefHeight="17.0" prefWidth="166.0" style="-fx-background-color: yellow;" text="CANNOT BE LESS THEN 200 ">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#returnto" prefHeight="25.0" prefWidth="64.0" style="-fx-background-color: YELLOW;" text="RETURN">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+      <ChoiceBox fx:id="genrechoicebox" layoutX="337.0" layoutY="384.0" prefHeight="25.0" prefWidth="269.0" />
+      <Label fx:id="lable6" layoutX="395.0" layoutY="422.0" prefHeight="17.0" prefWidth="112.0" style="-fx-background-color: yellow;" text="CANNOT BE EMPTY">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
